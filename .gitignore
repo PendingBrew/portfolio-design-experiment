@@ -1,22 +1,87 @@
+# ===========================
 # Dependencies
+# ===========================
 node_modules/
+.pnp
+.pnp.js
+.yarn/install-state.gz
 
+# ===========================
 # Next.js build output
+# ===========================
 .next/
 out/
 build/
+dist/
 
+# ===========================
 # Environment variables
-.env*.local
+# ===========================
+.env
+.env.local
 .env.development.local
 .env.test.local
 .env.production.local
+.env*.local
 
-# Logs
+# ===========================
+# Debug & Logs
+# ===========================
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-.next/dev/trace
-.next/dev/cache/turbopack/e07398321/CURRENT
-.next/dev/cache/turbopack/e07398321/LOG
-.gitignore
+pnpm-debug.log*
+*.log
+logs/
+
+# ===========================
+# TypeScript
+# ===========================
+*.tsbuildinfo
+next-env.d.ts
+
+# ===========================
+# Testing
+# ===========================
+coverage/
+.nyc_output/
+
+# ===========================
+# Cache
+# ===========================
+.cache/
+.turbo/
+.parcel-cache/
+.eslintcache
+.stylelintcache
+
+# ===========================
+# Editor & IDE
+# ===========================
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.swp
+*.swo
+
+# ===========================
+# OS generated files
+# ===========================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ===========================
+# Misc
+# ===========================
+*.pem
+.vercel
