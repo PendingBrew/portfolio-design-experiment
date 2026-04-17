@@ -1,1 +1,0 @@
-self.__NEXT_FONT_MANIFEST="{\n  \"app\": {\n    \"[project]/app/page\": [\n      \"static/media/Inter_18pt_Regular-s.p.0vxh10ei9mky4.ttf\",\n      \"static/media/Inter_18pt_Medium-s.p.0zulk6sg94puh.ttf\"\n    ]\n  },\n  \"appUsingSizeAdjust\": true,\n  \"pages\": {},\n  \"pagesUsingSizeAdjust\": false\n}"
