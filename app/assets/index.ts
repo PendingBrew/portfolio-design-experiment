@@ -8,11 +8,13 @@ import TheRedVineyard from "./the-red-vineyard.webp";
 import WardInTheHospital from "./ward-in-the-hospital-in-arles.webp";
 import PloughmanInTheFieldsNearArles from "./ploughman-in-the-fields-near-arles.webp";
 import PaulGauguinArmchair from "./paul-gauguin-armchair.webp";
+import PersonalProfile from "./peronal-profile.webp";
 
 // Icons
 import ThemeIcon from "./theme-icon.svg";
 import MenuIcon from "./menu-icon.svg"
 import ArrowRightIcon from "./arrow-right.svg"
+import ProfilePortrait from "./profile-portrait.png";
 
 
 export{
@@ -25,5 +27,7 @@ export{
     PaulGauguinArmchair,
     ThemeIcon,
     MenuIcon,
-    ArrowRightIcon
+    ArrowRightIcon,
+    ProfilePortrait,
+    PersonalProfile
 }

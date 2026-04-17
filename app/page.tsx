@@ -10,6 +10,8 @@ import {
   PloughmanInTheFieldsNearArles,
   PaulGauguinArmchair,
   ArrowRightIcon,
+  ProfilePortrait,
+  PersonalProfile,
 } from "./assets";
 
 export default function Home() {
@@ -184,7 +186,7 @@ export default function Home() {
         </section>
 
         {/* Section 3: Text content */}
-        <section className="flex flex-col gap-10 lg:gap-10">
+        <section className="flex flex-col gap-10 lg:gap-10 ">
           <h2 className="text-4xl md:text-6xl lg:text-7xl xl:text-[80px] font-medium leading-tight xl:leading-[100px] uppercase">
             Van Gogh painted several landscapes with flowers, roses, lilacs, and
             sunflowers.
@@ -199,6 +201,64 @@ export default function Home() {
         </section>
 
         <hr className="border-none h-[100px]" />
+
+        {/* Section Profile */}
+        <section className="flex flex-col lg:flex-row justify-end items-center gap-10 lg:gap-5 xl:gap-40 py-20 lg:py-36">
+          {/* Left: Vintage Portrait Image */}
+          <div className="w-full lg:w-[42%] xl:w-[38%]">
+            <div className="relative aspect-4/5 w-full rounded-xl overflow-hidden shadow-2xl">
+              <Image
+                src={PersonalProfile}
+                alt="Vincent Van Gogh Profile"
+                fill
+                priority
+                className="object-cover transform hover:scale-200 transition-transform duration-1000 ease-out"
+              />
+            </div>
+          </div>
+
+          {/* Right: Career Timeline */}
+          <div className="flex-1 w-full pt-6 lg:pt-12">
+            <div className="flex flex-col gap-10 lg:gap-5">
+              {[
+                {
+                  title: "Nuenen and Antwerp",
+                  role: "Painting Intern",
+                  year: "1883",
+                },
+                { title: "Paris", role: "Junior Painter", year: "1886" },
+                {
+                  title: "Gauguin's Visit",
+                  role: "Experimental Artist",
+                  year: "1888",
+                },
+                { title: "Saint-Rémy", role: "Senior Painter", year: "1889" },
+                {
+                  title: "Auvers-sur-Oise",
+                  role: "Painting Studio Manager",
+                  year: "1890",
+                },
+              ].map((item, index) => (
+                <div
+                  key={index}
+                  className="flex justify-between items-start group"
+                >
+                  <div className="flex flex-col gap-1.5">
+                    <h3 className="text-2xl md:text-2xl lg:text-3xl font-medium uppercase tracking-tight leading-none text-black">
+                      {item.title}
+                    </h3>
+                    <p className="text-xs md:text-xs lg:text-sm font-medium uppercase tracking-tight text-black">
+                      {item.role}
+                    </p>
+                  </div>
+                  <span className="text-2xl md:text-2xl lg:text-3xl font-medium text-neutral-400 tabular-nums">
+                    {item.year}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
       </main>
     </>
   );
