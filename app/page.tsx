@@ -153,7 +153,9 @@ export default function Home() {
               <div className="flex gap-6 items-center">
                 <span className="text-gray-400">5</span>
                 <div className="flex items-center gap-2">
-                  <p className="uppercase">Ploughman in the Fields near Arles</p>
+                  <p className="uppercase">
+                    Ploughman in the Fields near Arles
+                  </p>
                   <Image src={ArrowRightIcon} alt="arrow" className="w-4 h-4" />
                 </div>
               </div>
@@ -179,6 +181,21 @@ export default function Home() {
               </div>
             </div>
           </div>
+        </section>
+
+        {/* Section 3: Text content */}
+        <section className="flex flex-col gap-10 lg:gap-10">
+          <h2 className="text-4xl md:text-6xl lg:text-7xl xl:text-[80px] font-medium leading-tight xl:leading-[100px] uppercase">
+            Van Gogh painted several landscapes with flowers, roses, lilacs, and
+            sunflowers.
+          </h2>
+
+          <p className="text-base sm:text-lg lg:text-4xl font-medium  uppercase ">
+            Some reflect his interests in the language of colour, and also in
+            Japanese ukiyo-e. There are two series of dying sunflowers. The
+            first was painted in Paris in 1887 and shows flowers lying on the
+            ground.
+          </p>
         </section>
 
         <hr className="border-none h-[100px]" />
