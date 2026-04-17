@@ -1,11 +1,22 @@
 import Image from "next/image";
-import { Logo, ThemeIcon, MenuIcon } from "./assets";
+import {
+  Logo,
+  ThemeIcon,
+  MenuIcon,
+  TheStaryNight,
+  TheNightCafe,
+  TheRedVineyard,
+  WardInTheHospital,
+  PloughmanInTheFieldsNearArles,
+  PaulGauguinArmchair,
+  ArrowRightIcon,
+} from "./assets";
 
 export default function Home() {
   return (
     <>
       {/* Navigation Menus */}
-      <nav className="fixed w-full flex justify-between p-3 md:p-10">
+      <nav className="fixed w-full flex justify-between p-3 md:p-6 lg:p-10 z-20">
         <Image src={Logo} alt="Logo" className="w-[90px]" />
 
         <div className="flex gap-5 md:gap-8">
@@ -21,6 +32,157 @@ export default function Home() {
           />
         </div>
       </nav>
+
+      <hr className="border-none h-[250px]" />
+
+      <main className="w-[90%] md:w-[85%] mx-auto relative text-sm md:text-base">
+        {/* Section 1 */}
+        <section className="w-full xl:w-[80%]">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl xl:text-[80px] font-medium leading-tight xl:leading-[100px] uppercase">
+            Vincent Van Gogh. post-impressionist painter and artist
+          </h1>
+        </section>
+
+        <hr className="border-none h-[80px] md:h-[150px] lg:h-[200px]" />
+
+        {/* Section 2 */}
+        <section className="pb-20">
+          {/* Group 1: First Row */}
+          <div className="flex flex-col lg:flex-row items-center lg:items-center gap-10 lg:gap-12 xl:gap-20 justify-start">
+            {/* image 1 */}
+            <div className="flex flex-col gap-4 w-full md:w-[80%] lg:w-auto">
+              <div className="w-full lg:w-[450px] xl:w-[600px] h-[300px] md:h-[450px] lg:h-[450px] xl:h-[600px] bg-amber-100 rounded-xl relative overflow-hidden">
+                <Image
+                  src={TheStaryNight}
+                  alt="stary night art"
+                  fill
+                  className="object-cover object-left"
+                />
+              </div>
+
+              <div className="flex gap-6 items-center">
+                <span className="text-gray-400">1</span>
+                <div className="flex items-center gap-2">
+                  <p className="uppercase">The Starry Night</p>
+                  <Image src={ArrowRightIcon} alt="arrow" className="w-4 h-4" />
+                </div>
+              </div>
+            </div>
+
+            {/* image 2 */}
+            <div className="flex flex-col gap-4 w-full md:w-[80%] lg:w-auto">
+              <div className="w-full lg:w-[350px] xl:w-[500px] h-[300px] md:h-[300px] lg:h-[280px] xl:h-[360px] bg-blue-100 rounded-xl relative overflow-hidden">
+                <Image
+                  src={TheNightCafe}
+                  alt="night cafe art"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+
+              <div className="flex gap-6 items-center">
+                <span className="text-gray-400">2</span>
+                <div className="flex items-center gap-2">
+                  <p className="uppercase">The Night Café</p>
+                  <Image src={ArrowRightIcon} alt="arrow" className="w-4 h-4" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <hr className="border-none h-[60px] lg:h-[100px]" />
+
+          {/* Group 2: Second Row */}
+          <div className="flex flex-col lg:flex-row items-center lg:items-start gap-10 lg:gap-12 xl:gap-20 justify-end">
+            {/* image 3 */}
+            <div className="flex flex-col gap-4 w-full md:w-[80%] lg:w-auto">
+              <div className="w-full lg:w-[350px] xl:w-[400px] h-[300px] md:h-[350px] lg:h-[350px] xl:h-[400px] bg-gray-600 rounded-xl relative overflow-hidden">
+                <Image
+                  src={TheRedVineyard}
+                  alt="red vineyard art"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+
+              <div className="flex gap-6 items-center">
+                <span className="text-gray-400">3</span>
+                <div className="flex items-center gap-2">
+                  <p className="uppercase">The Red Vineyard</p>
+                  <Image src={ArrowRightIcon} alt="arrow" className="w-4 h-4" />
+                </div>
+              </div>
+            </div>
+
+            {/* image 4 */}
+            <div className="flex flex-col gap-4 w-full md:w-[80%] lg:w-auto">
+              <div className="w-full lg:w-[400px] xl:w-[500px] h-[400px] md:h-[550px] lg:h-[550px] xl:h-[660px] bg-purple-100 rounded-xl relative overflow-hidden">
+                <Image
+                  src={WardInTheHospital}
+                  alt="ward in the hospital art"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+
+              <div className="flex gap-6 items-center">
+                <span className="text-gray-400">4</span>
+                <div className="flex items-center gap-2">
+                  <p className="uppercase">Ward in the Hospital in Arles</p>
+                  <Image src={ArrowRightIcon} alt="arrow" className="w-4 h-4" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <hr className="border-none h-[60px] lg:h-[100px]" />
+
+          {/* Group 3: Third Row */}
+          <div className="flex flex-col lg:flex-row items-center lg:items-start gap-10 lg:gap-12 xl:gap-20 justify-end">
+            {/* image 5 */}
+            <div className="flex flex-col gap-4 w-full md:w-[80%] lg:w-auto">
+              <div className="w-full lg:w-[400px] xl:w-[500px] h-[300px] md:h-[350px] lg:h-[320px] xl:h-[400px] bg-gray-600 rounded-xl relative overflow-hidden">
+                <Image
+                  src={PloughmanInTheFieldsNearArles}
+                  alt="ploughman in the fields near arles art"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+
+              <div className="flex gap-6 items-center">
+                <span className="text-gray-400">5</span>
+                <div className="flex items-center gap-2">
+                  <p className="uppercase">Ploughman in the Fields near Arles</p>
+                  <Image src={ArrowRightIcon} alt="arrow" className="w-4 h-4" />
+                </div>
+              </div>
+            </div>
+
+            {/* image 6 */}
+            <div className="flex flex-col gap-4 pt-0 lg:pt-11 w-full md:w-[80%] lg:w-auto">
+              <div className="w-full lg:w-[450px] xl:w-[600px] h-[300px] md:h-[450px] lg:h-[450px] xl:h-[600px] bg-blue-300 rounded-xl relative overflow-hidden">
+                <Image
+                  src={PaulGauguinArmchair}
+                  alt="paul gauguin armchair art"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+
+              <div className="flex gap-6 items-center">
+                <span className="text-gray-400">6</span>
+                <div className="flex items-center gap-2">
+                  <p className="uppercase">Paul Gauguin&apos;s Armchair</p>
+                  <Image src={ArrowRightIcon} alt="arrow" className="w-4 h-4" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <hr className="border-none h-[100px]" />
+      </main>
     </>
   );
 }

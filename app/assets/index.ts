@@ -12,6 +12,7 @@ import PaulGauguinArmchair from "./paul-gauguin-armchair.webp";
 // Icons
 import ThemeIcon from "./theme-icon.svg";
 import MenuIcon from "./menu-icon.svg"
+import ArrowRightIcon from "./arrow-right.svg"
 
 
 export{
@@ -24,4 +25,5 @@ export{
     PaulGauguinArmchair,
     ThemeIcon,
     MenuIcon,
+    ArrowRightIcon
 }
