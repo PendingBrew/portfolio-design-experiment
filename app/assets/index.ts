@@ -1,0 +1,27 @@
+// Primary
+import Logo from "./logo.svg";
+
+// Portfolio
+import TheStaryNight from "./the-starry-night.webp";
+import TheNightCafe from "./the-night-cafe.webp";
+import TheRedVineyard from "./the-red-vineyard.webp";
+import WardInTheHospital from "./ward-in-the-hospital-in-arles.webp";
+import PloughmanInTheFieldsNearArles from "./ploughman-in-the-fields-near-arles.webp";
+import PaulGauguinArmchair from "./paul-gauguin-armchair.webp";
+
+// Icons
+import ThemeIcon from "./theme-icon.svg";
+import MenuIcon from "./menu-icon.svg"
+
+
+export{
+    Logo,
+    TheStaryNight,
+    TheNightCafe,
+    TheRedVineyard,
+    WardInTheHospital,
+    PloughmanInTheFieldsNearArles,
+    PaulGauguinArmchair,
+    ThemeIcon,
+    MenuIcon,
+}
