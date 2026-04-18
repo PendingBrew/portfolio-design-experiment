@@ -281,7 +281,7 @@ export default function Home() {
               { name: "Instagram", url: "#" },
             ].map((link, index) => (
               <div key={link.name} className="flex items-center">
-                <div className="h-8 md:h-12 w-[1px] bg-neutral-200" />
+                <div className="h-8 md:h-12 w-px bg-neutral-200" />
                 <a
                   href={link.url}
                   className="px-2.5 sm:px-4 md:px-10 flex items-center gap-2 uppercase font-medium tracking-widest text-[9px] sm:text-[11px] md:text-[13px] text-neutral-800 hover:opacity-40 transition-all group"
@@ -294,7 +294,7 @@ export default function Home() {
                   />
                 </a>
                 {index === 4 && (
-                  <div className="h-8 md:h-12 w-[1px] bg-neutral-200 mr-4 sm:mr-6 md:mr-10" />
+                  <div className="h-8 md:h-12 w-px bg-neutral-200 mr-4 sm:mr-6 md:mr-10" />
                 )}
               </div>
             ))}
