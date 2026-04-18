@@ -15,6 +15,8 @@ import ThemeIcon from "./theme-icon.svg";
 import MenuIcon from "./menu-icon.svg"
 import ArrowRightIcon from "./arrow-right.svg"
 import ProfilePortrait from "./profile-portrait.png";
+import ArrowUpIcon from "./arrow-up.svg";
+import JumpUpIcon from "./jump-up.svg";
 
 
 export{
@@ -29,5 +31,7 @@ export{
     MenuIcon,
     ArrowRightIcon,
     ProfilePortrait,
-    PersonalProfile
+    PersonalProfile,
+    ArrowUpIcon,
+    JumpUpIcon
 }

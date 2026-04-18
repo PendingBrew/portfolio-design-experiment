@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import {
   Logo,
@@ -10,15 +11,16 @@ import {
   PloughmanInTheFieldsNearArles,
   PaulGauguinArmchair,
   ArrowRightIcon,
-  ProfilePortrait,
   PersonalProfile,
+  ArrowUpIcon,
+  JumpUpIcon,
 } from "./assets";
 
 export default function Home() {
   return (
     <>
       {/* Navigation Menus */}
-      <nav className="fixed w-full flex justify-between p-3 md:p-6 lg:p-10 z-20">
+      <nav className="fixed w-full flex justify-between p-3 sm:p-6 lg:p-10 z-20">
         <Image src={Logo} alt="Logo" className="w-[90px]" />
 
         <div className="flex gap-5 md:gap-8">
@@ -35,12 +37,12 @@ export default function Home() {
         </div>
       </nav>
 
-      <hr className="border-none h-[250px]" />
+      <hr className="border-none h-[100px] md:h-[250px]" />
 
       <main className="w-[90%] md:w-[85%] mx-auto relative text-sm md:text-base">
         {/* Section 1 */}
         <section className="w-full xl:w-[80%]">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl xl:text-[80px] font-medium leading-tight xl:leading-[100px] uppercase">
+          <h1 className="text-[32px] sm:text-5xl md:text-6xl lg:text-7xl xl:text-[80px] font-medium leading-[1.2] xl:leading-[100px] uppercase">
             Vincent Van Gogh. post-impressionist painter and artist
           </h1>
         </section>
@@ -50,10 +52,10 @@ export default function Home() {
         {/* Section 2 */}
         <section className="pb-20">
           {/* Group 1: First Row */}
-          <div className="flex flex-col lg:flex-row items-center lg:items-center gap-10 lg:gap-12 xl:gap-20 justify-start">
+          <div className="flex flex-col md:flex-row items-center md:items-start gap-10 sm:gap-12 xl:gap-20 justify-start">
             {/* image 1 */}
-            <div className="flex flex-col gap-4 w-full md:w-[80%] lg:w-auto">
-              <div className="w-full lg:w-[450px] xl:w-[600px] h-[300px] md:h-[450px] lg:h-[450px] xl:h-[600px] bg-amber-100 rounded-xl relative overflow-hidden">
+            <div className="flex flex-col gap-4 w-full md:w-auto">
+              <div className="w-full sm:w-[500px] md:w-[350px] lg:w-[450px] xl:w-[600px] h-[300px] sm:h-[400px] md:h-[350px] lg:h-[450px] xl:h-[600px] bg-amber-100 rounded-xl relative overflow-hidden">
                 <Image
                   src={TheStaryNight}
                   alt="stary night art"
@@ -72,8 +74,8 @@ export default function Home() {
             </div>
 
             {/* image 2 */}
-            <div className="flex flex-col gap-4 w-full md:w-[80%] lg:w-auto">
-              <div className="w-full lg:w-[350px] xl:w-[500px] h-[300px] md:h-[300px] lg:h-[280px] xl:h-[360px] bg-blue-100 rounded-xl relative overflow-hidden">
+            <div className="flex flex-col gap-4 w-full md:w-auto">
+              <div className="w-full sm:w-[450px] md:w-[280px] lg:w-[350px] xl:w-[500px] h-[300px] md:h-[220px] lg:h-[280px] xl:h-[360px] bg-blue-100 rounded-xl relative overflow-hidden">
                 <Image
                   src={TheNightCafe}
                   alt="night cafe art"
@@ -95,10 +97,10 @@ export default function Home() {
           <hr className="border-none h-[60px] lg:h-[100px]" />
 
           {/* Group 2: Second Row */}
-          <div className="flex flex-col lg:flex-row items-center lg:items-start gap-10 lg:gap-12 xl:gap-20 justify-end">
+          <div className="flex flex-col md:flex-row items-center md:items-start gap-10 sm:gap-12 xl:gap-20 justify-end">
             {/* image 3 */}
-            <div className="flex flex-col gap-4 w-full md:w-[80%] lg:w-auto">
-              <div className="w-full lg:w-[350px] xl:w-[400px] h-[300px] md:h-[350px] lg:h-[350px] xl:h-[400px] bg-gray-600 rounded-xl relative overflow-hidden">
+            <div className="flex flex-col gap-4 w-full md:w-auto">
+              <div className="w-full sm:w-[400px] md:w-[280px] lg:w-[350px] xl:w-[400px] h-[300px] md:h-[280px] lg:h-[350px] xl:h-[400px] bg-gray-600 rounded-xl relative overflow-hidden">
                 <Image
                   src={TheRedVineyard}
                   alt="red vineyard art"
@@ -117,8 +119,8 @@ export default function Home() {
             </div>
 
             {/* image 4 */}
-            <div className="flex flex-col gap-4 w-full md:w-[80%] lg:w-auto">
-              <div className="w-full lg:w-[400px] xl:w-[500px] h-[400px] md:h-[550px] lg:h-[550px] xl:h-[660px] bg-purple-100 rounded-xl relative overflow-hidden">
+            <div className="flex flex-col gap-4 w-full md:w-auto">
+              <div className="w-full sm:w-[500px] md:w-[350px] lg:w-[400px] xl:w-[500px] h-[400px] md:h-[480px] lg:h-[550px] xl:h-[660px] bg-purple-100 rounded-xl relative overflow-hidden">
                 <Image
                   src={WardInTheHospital}
                   alt="ward in the hospital art"
@@ -140,10 +142,10 @@ export default function Home() {
           <hr className="border-none h-[60px] lg:h-[100px]" />
 
           {/* Group 3: Third Row */}
-          <div className="flex flex-col lg:flex-row items-center lg:items-start gap-10 lg:gap-12 xl:gap-20 justify-end">
+          <div className="flex flex-col md:flex-row items-center md:items-start gap-10 sm:gap-12 xl:gap-20 justify-end">
             {/* image 5 */}
-            <div className="flex flex-col gap-4 w-full md:w-[80%] lg:w-auto">
-              <div className="w-full lg:w-[400px] xl:w-[500px] h-[300px] md:h-[350px] lg:h-[320px] xl:h-[400px] bg-gray-600 rounded-xl relative overflow-hidden">
+            <div className="flex flex-col gap-4 w-full md:w-auto">
+              <div className="w-full sm:w-[500px] md:w-[350px] lg:w-[400px] xl:w-[500px] h-[300px] md:h-[280px] lg:h-[320px] xl:h-[400px] bg-gray-600 rounded-xl relative overflow-hidden">
                 <Image
                   src={PloughmanInTheFieldsNearArles}
                   alt="ploughman in the fields near arles art"
@@ -164,8 +166,8 @@ export default function Home() {
             </div>
 
             {/* image 6 */}
-            <div className="flex flex-col gap-4 pt-0 lg:pt-11 w-full md:w-[80%] lg:w-auto">
-              <div className="w-full lg:w-[450px] xl:w-[600px] h-[300px] md:h-[450px] lg:h-[450px] xl:h-[600px] bg-blue-300 rounded-xl relative overflow-hidden">
+            <div className="flex flex-col gap-4 pt-0 lg:pt-11 w-full md:w-auto">
+              <div className="w-full sm:w-[550px] md:w-[400px] lg:w-[450px] xl:w-[600px] h-[300px] md:h-[400px] lg:h-[450px] xl:h-[600px] bg-blue-300 rounded-xl relative overflow-hidden">
                 <Image
                   src={PaulGauguinArmchair}
                   alt="paul gauguin armchair art"
@@ -187,7 +189,7 @@ export default function Home() {
 
         {/* Section 3: Text content */}
         <section className="flex flex-col gap-10 lg:gap-10 ">
-          <h2 className="text-4xl md:text-6xl lg:text-7xl xl:text-[80px] font-medium leading-tight xl:leading-[100px] uppercase">
+          <h2 className="text-[32px] sm:text-5xl md:text-6xl lg:text-7xl xl:text-[80px] font-medium leading-[1.2] xl:leading-[100px] uppercase">
             Van Gogh painted several landscapes with flowers, roses, lilacs, and
             sunflowers.
           </h2>
@@ -260,6 +262,56 @@ export default function Home() {
           </div>
         </section>
       </main>
+
+      <footer className="w-[90%] md:w-[85%] mx-auto py-10 sm:py-16 flex flex-col sm:flex-row justify-between items-center gap-10 border-t border-neutral-100">
+        <div className="flex items-center gap-3">
+          <span className="text-sm">●</span>
+          <span className="uppercase font-medium tracking-widest text-[10px] sm:text-[11px] md:text-[13px] text-neutral-800 whitespace-nowrap">
+            @vangogh.com
+          </span>
+        </div>
+
+        <div className="flex items-center gap-6 sm:gap-4 md:gap-10 flex-wrap justify-center">
+          <div className="flex items-center flex-wrap justify-center">
+            {[
+              { name: "Linkedin", url: "#" },
+              { name: "Dribbble", url: "#" },
+              { name: "Myspace", url: "#" },
+              { name: "Github", url: "#" },
+              { name: "Instagram", url: "#" },
+            ].map((link, index) => (
+              <div key={link.name} className="flex items-center">
+                <div className="h-8 md:h-12 w-[1px] bg-neutral-200" />
+                <a
+                  href={link.url}
+                  className="px-2.5 sm:px-4 md:px-10 flex items-center gap-2 uppercase font-medium tracking-widest text-[9px] sm:text-[11px] md:text-[13px] text-neutral-800 hover:opacity-40 transition-all group"
+                >
+                  <span className="whitespace-nowrap">{link.name}</span>
+                  <Image
+                    src={ArrowUpIcon}
+                    alt="arrow"
+                    className="w-2.5 h-2.5 opacity-70 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-transform"
+                  />
+                </a>
+                {index === 4 && (
+                  <div className="h-8 md:h-12 w-[1px] bg-neutral-200 mr-4 sm:mr-6 md:mr-10" />
+                )}
+              </div>
+            ))}
+          </div>
+
+          <button
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+            className="cursor-pointer hover:scale-110 transition-transform active:scale-95 shrink-0"
+          >
+            <Image
+              src={JumpUpIcon}
+              alt="Jump Up"
+              className="w-10 h-10 md:w-12 md:h-12"
+            />
+          </button>
+        </div>
+      </footer>
     </>
   );
 }
